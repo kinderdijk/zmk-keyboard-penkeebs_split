@@ -1,0 +1,6 @@
+# No whitespace after the comma or in your keyboard name!
+config SHIELD_PENKEEBS_SPLIT_LEFT
+    def_bool $(shields_list_contains,penkeebs_split_left)
+
+config SHIELD_PENKEEBS_SPLIT_RIGHT
+    def_bool $(shields_list_contains,penkeebs_split_right)
