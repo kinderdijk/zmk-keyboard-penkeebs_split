@@ -1,7 +1,7 @@
 if SHIELD_PENKEEBS_SPLIT_LEFT
 # Name must be under 16 characters
 config ZMK_KEYBOARD_NAME
-    default "My Keyboard"
+    default "PenKeebs Split"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
