@@ -6,6 +6,12 @@
         zmk,matrix_transform = &default_transform;
     };
 
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <14>;   /* 7 cols × 2 halves */
@@ -42,5 +48,19 @@
             , <&pro_micro 14 GPIO_ACTIVE_HIGH>
             , <&pro_micro 16 GPIO_ACTIVE_HIGH>
             ;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        status = "okay";
+        led0: led_0 {
+            gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+        };
+        led1: led_1 {
+            gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
+        };
+        led2: led_2 {
+            gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
+        };
     };
 };
