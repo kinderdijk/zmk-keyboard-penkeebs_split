@@ -1,6 +1,6 @@
 file_format: "1"
 id: penkeebs_split
-name: My Keyboard
+name: PenKeebs Split
 type: shield
 url: https://github.com/kinderdijk/zmk-keyboard-penkeebs_split
 requires:
